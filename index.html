@@ -49,6 +49,8 @@
         font-size: clamp(1rem, 1.8vw + 0.5rem, 1.5rem);
         font-weight: 600;
         line-height: 1.3;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
       }
 
       h3 {
@@ -145,10 +147,10 @@
       </h1>
 
       <p>
-        <strong>Daniel Phan</strong> (A18142000) — <em>d4phan@ucsd.edu</em><br>
-        <strong>Rachel Sakamoto</strong> (A18111514) — <em>rwsakamoto@ucsd.edu</em><br>
-        <strong>Kanishk Hari</strong> (A18534775) — <em>kahari@ucsd.edu</em><br>
-        <strong>Derek Huang</strong> (A18525639) — <em>dyh003@ucsd.edu</em>
+        <strong>Daniel Phan</strong> — <em>d4phan@ucsd.edu</em><br>
+        <strong>Rachel Sakamoto</strong> — <em>rwsakamoto@ucsd.edu</em><br>
+        <strong>Kanishk Hari</strong> — <em>kahari@ucsd.edu</em><br>
+        <strong>Derek Huang</strong> — <em>dyh003@ucsd.edu</em>
       </p>
     </header>
 
@@ -160,7 +162,7 @@
 
         <figure>
           <img src="images/plot1.png" alt="" />
-          <figcaption>Share of women without local abortion clinic access by state in 2020, highlighting geographic disparities in access.</figcaption>
+          <figcaption>BRIEF CAPTION HERE.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
@@ -193,9 +195,18 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>1. Showing Both the Highest and Lowest Access States 
+            Instead of only showing the “best” states, we included both the top five and bottom five states in terms of clinic access. For this graph, the states that were chosen to represent areas with high percentages of clinic access and low percentages of clinic access were chosen based on the states' political party affiliation. With the states with the highest percentage of clinic access, they are among the top democratic/left-leaning states, which are pro-choice and allow women to have the freedom to get an abortion if they decide to. The states with the lowest percentage to clinic access are the more republican/right-leaning states, who are typically against abortion, and thus have composed of laws/policies which prohibit women to abortion clinics. 
+            Score: 2.0 
+</li>
+          <li>2. Computing Clinic Access
+            By transforming the data to include an arbitrary scale of clinic access, we give readers insight into how the top 5 and bottom 5 states for clinic access are computed, based on percentage of counties with no access to clinics and counties without a known abortion provider. There is no concrete way to compute the rural-ness of an area, which contributes to the score being a 1.0 as it is somewhat deceptive in not fully considering rural areas of all states. 
+            Score: 1.0
+</li>
+          <li>3. Using a red to blue color scale
+            The color of the clinic is flipped to show that while the states with highest access to abortion clinics are red (commonly associated with the Republican party) and the lowest states are blue (associated with the Democratic party), they have inverse meaning. However, Republican states are commonly associated with a lack of abortion clinics, and Democratic states are known for a vast amount of abortion clinics for easy access. This contributes to the deceptiveness as it causes confusion for readers, who tend to associate the Democratic party and Republican party with blue and red, respectively, but the flip of colors illustrates the idea that despite having access to many clinics, this does not guarantee nor entail availability for women to go to a clinic. 
+            Score: 0.5
+</li>
         </ul>
       </section>
 
